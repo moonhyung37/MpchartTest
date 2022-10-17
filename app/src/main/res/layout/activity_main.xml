@@ -4,19 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/linechart3"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="10dp"
-        android:padding="10dp" />
-
-    <FrameLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <Button
-            android:id="@+id/btn_1"
+            android:id="@+id/btn_Start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -24,21 +18,38 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/linechart1"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:padding="10dp" />
-
-    </FrameLayout>
+        <Button
+            android:id="@+id/btn_zoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="확대"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/linechart2"
+        android:id="@+id/linechart1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="10dp"
         android:padding="10dp" />
 
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart2"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:padding="10dp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechartZoomIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
